@@ -2,6 +2,7 @@ $text-color: #333745;
 $beige: #eef5db;
 $tea-green: #c7efcf;
 $cerise: #e63462;
+$transparent: #ffffff00;
 
 body {
   height: 100vh;
@@ -15,5 +16,73 @@ body {
     grid-template-columns: 34rem 44rem;
     column-gap: 4rem;
     align-items: start;
+    .sidebar {
+    }
+    .main {
+    }
   }
+}
+ul {
+  padding: 0;
+}
+.carCard {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: $tea-green;
+  .cardContent {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+
+    img {
+      border-radius: 25px;
+    }
+    span {
+      line-height: 50px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.button {
+  background-color: $transparent;
+  color: $text-color;
+  padding: 0.8rem 4rem;
+  border: 2px solid $text-color;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    color: white;
+    background-color: $text-color;
+  }
+}
+
+form {
+  font-size: 1.6rem;
+  display: grid;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 5rem;
+  background-color: $beige;
+}
+input {
+  border: 1px solid $text-color;
+}
+.form-add-car {
+  width: 300px;
+  grid-template-columns: 1fr 1.5fr;
+  margin-bottom: 1.6rem;
+  padding: 1.2rem;
+}
+.form-fuel-consumption {
+  grid-template-columns: 1fr 12rem;
+  padding: 3.2rem 4rem;
+}
+
+label {
+  font-weight: 500;
 }
