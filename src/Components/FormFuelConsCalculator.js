@@ -6,6 +6,7 @@ export default function FormFuelConsCalculator({
   selectedCar,
   cars,
   setCars,
+  handleCalculation,
 }) {
   const [distanceTravelled, setDistanceTravelled] = useState(0);
   const [fuelSpent, setFuelSpent] = useState(0);
